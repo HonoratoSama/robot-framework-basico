@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-14T21:18:46.824637" rpa="false" schemaversion="5">
+<suite id="s1" name="Tipos De Variaveis Dicionario" source="C:\Udemy\RobotFramework\WebTesting\tipos_de_variaveis_dicionario.robot">
+<test id="s1-t1" name="Imprimir todos os Meses do Ano" line="21">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Imprimindo todos os Meses do Ano e seus dias:</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.048616" elapsed="0.000382"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Janeiro tem ${Meses_Dias.Jaineiro} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.049279" elapsed="0.000549"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Fevereiro tem ${Meses_Dias.Fevereiro} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.050072" elapsed="0.000471"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Março tem ${Meses_Dias.Março} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.050665" elapsed="0.000467"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Abril tem ${Meses_Dias.Abril} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.051287" elapsed="0.000400"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Maio tem ${Meses_Dias.Maio} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.051829" elapsed="0.000419"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Junho tem ${Meses_Dias.Junho} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.052379" elapsed="0.000553"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Julho tem ${Meses_Dias.Julho} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.053455" elapsed="0.004488"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Agosto tem ${Meses_Dias.Agosto} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.058955" elapsed="0.001144"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Setembro tem ${Meses_Dias.Setembro} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.060368" elapsed="0.000698"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Outubro tem ${Meses_Dias.Outubro} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.061281" elapsed="0.000446"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Novembro tem ${Meses_Dias.Novembro} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.061861" elapsed="0.000405"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Dezembro tem ${Meses_Dias.Dezembro} dias</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-14T21:18:47.062412" elapsed="0.000389"/>
+</kw>
+<status status="PASS" start="2025-07-14T21:18:47.047861" elapsed="0.015126"/>
+</test>
+<doc>Criar variavel do tipo dicionario, contendo os meses do ano
+e sua respectiva quantidade de dias, apresentar resultado em um LOG</doc>
+<status status="PASS" start="2025-07-14T21:18:46.825670" elapsed="0.238102"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tipos De Variaveis Dicionario" id="s1" pass="1" fail="0" skip="0">Tipos De Variaveis Dicionario</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
