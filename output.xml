@@ -1,77 +1,937 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-14T21:18:46.824637" rpa="false" schemaversion="5">
-<suite id="s1" name="Tipos De Variaveis Dicionario" source="C:\Udemy\RobotFramework\WebTesting\tipos_de_variaveis_dicionario.robot">
-<test id="s1-t1" name="Imprimir todos os Meses do Ano" line="21">
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-16T22:28:42.256993" rpa="false" schemaversion="5">
+<suite id="s1" name="Eunaosou For If" source="c:\Udemy\RobotFramework\WebTesting\eunaosou_for_if.robot">
+<test id="s1-t1" name="IMRPIMINDO O CINCO E O DEZ" line="14">
+<kw name="USANDO O FOR IN ENUMERATE">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Imprimindo todos os Meses do Ano e seus dias:</arg>
+<arg>${\n}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.048616" elapsed="0.000382"/>
+<status status="PASS" start="2025-07-16T22:28:42.471294" elapsed="0.000574"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Janeiro tem ${Meses_Dias.Jaineiro} dias</arg>
+<arg>**** Iniciando a Brincadeira ****</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.049279" elapsed="0.000549"/>
+<status status="PASS" start="2025-07-16T22:28:42.472179" elapsed="0.000687"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.473949" level="INFO">**** Iniciando a Brincadeira ****</msg>
+<arg>**** Iniciando a Brincadeira ****</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.473044" elapsed="0.003672"/>
+</kw>
+<for flavor="IN ENUMERATE">
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.477713" elapsed="0.000060"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Fevereiro tem ${Meses_Dias.Fevereiro} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.050072" elapsed="0.000471"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.477871" elapsed="0.000045"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.477992" elapsed="0.000041"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.477443" elapsed="0.000632"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.478272" elapsed="0.000041"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Março tem ${Meses_Dias.Março} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.050665" elapsed="0.000467"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.478384" elapsed="0.000040"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.478489" elapsed="0.000039"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.478128" elapsed="0.000439"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.478684" elapsed="0.001428"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Abril tem ${Meses_Dias.Abril} dias</arg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.051287" elapsed="0.000400"/>
+<status status="PASS" start="2025-07-16T22:28:42.480273" elapsed="0.002123"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.483201" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 0 e me chamo VERA</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.482610" elapsed="0.001135"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.478612" elapsed="0.005790"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.477419" elapsed="0.007302"/>
+</if>
+<var name="${INDICE}">0</var>
+<var name="${NOME}">VERA</var>
+<status status="PASS" start="2025-07-16T22:28:42.477246" elapsed="0.007602"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.486477" elapsed="0.000179"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Maio tem ${Meses_Dias.Maio} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.051829" elapsed="0.000419"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.487100" elapsed="0.000107"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.487343" elapsed="0.000069"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.485979" elapsed="0.001507"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.487739" elapsed="0.000046"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Junho tem ${Meses_Dias.Junho} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.052379" elapsed="0.000553"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.487858" elapsed="0.000046"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.487974" elapsed="0.000042"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.487570" elapsed="0.000499"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.488193" elapsed="0.000251"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Julho tem ${Meses_Dias.Julho} dias</arg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.053455" elapsed="0.004488"/>
+<status status="PASS" start="2025-07-16T22:28:42.488549" elapsed="0.000200"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.488971" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 1 e me chamo VERONICA</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.488847" elapsed="0.000300"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.488115" elapsed="0.001166"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.485957" elapsed="0.003385"/>
+</if>
+<var name="${INDICE}">1</var>
+<var name="${NOME}">VERONICA</var>
+<status status="PASS" start="2025-07-16T22:28:42.485751" elapsed="0.003613"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.489774" elapsed="0.000044"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Agosto tem ${Meses_Dias.Agosto} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.058955" elapsed="0.001144"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.489901" elapsed="0.000041"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.490010" elapsed="0.000037"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.489634" elapsed="0.000451"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.490252" elapsed="0.000042"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Setembro tem ${Meses_Dias.Setembro} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.060368" elapsed="0.000698"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.490362" elapsed="0.000038"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.490663" elapsed="0.000058"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.490127" elapsed="0.000647"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.490916" elapsed="0.000706"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Outubro tem ${Meses_Dias.Outubro} dias</arg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.061281" elapsed="0.000446"/>
+<status status="PASS" start="2025-07-16T22:28:42.491846" elapsed="0.000840"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.493235" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 2 e me chamo GILMAR</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.492883" elapsed="0.000456"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.490828" elapsed="0.002601"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.489622" elapsed="0.003928"/>
+</if>
+<var name="${INDICE}">2</var>
+<var name="${NOME}">GILMAR</var>
+<status status="PASS" start="2025-07-16T22:28:42.489557" elapsed="0.004017"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.493993" elapsed="0.000050"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Novembro tem ${Meses_Dias.Novembro} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.061861" elapsed="0.000405"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.494125" elapsed="0.000298"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.494526" elapsed="0.000145"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.493821" elapsed="0.000967"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.495121" elapsed="0.000083"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Dezembro tem ${Meses_Dias.Dezembro} dias</arg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-07-14T21:18:47.062412" elapsed="0.000389"/>
+<status status="NOT RUN" start="2025-07-16T22:28:42.495393" elapsed="0.000199"/>
 </kw>
-<status status="PASS" start="2025-07-14T21:18:47.047861" elapsed="0.015126"/>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.495701" elapsed="0.000052"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.494879" elapsed="0.000921"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.495927" elapsed="0.000623"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.496745" elapsed="0.001507"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.499104" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 3 e me chamo GILBERTO</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.498616" elapsed="0.000769"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.495847" elapsed="0.003662"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.493808" elapsed="0.005790"/>
+</if>
+<var name="${INDICE}">3</var>
+<var name="${NOME}">GILBERTO</var>
+<status status="PASS" start="2025-07-16T22:28:42.493739" elapsed="0.005908"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.500494" elapsed="0.000089"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.500697" elapsed="0.000050"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.500899" elapsed="0.000056"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.500145" elapsed="0.000858"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.501211" elapsed="0.000043"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.501324" elapsed="0.000041"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.501434" elapsed="0.000045"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.501068" elapsed="0.000462"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.501655" elapsed="0.000301"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.502344" elapsed="0.000868"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.504284" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 4 e me chamo GILVAN</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.503687" elapsed="0.000760"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.501580" elapsed="0.002955"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.500117" elapsed="0.004492"/>
+</if>
+<var name="${INDICE}">4</var>
+<var name="${NOME}">GILVAN</var>
+<status status="PASS" start="2025-07-16T22:28:42.499972" elapsed="0.004661"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.505624" elapsed="0.001041"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.507421" elapsed="0.000700"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.508673" level="INFO">Eu sou o número 5 e me chamo JAIME</msg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.508381" elapsed="0.000455"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.505034" elapsed="0.004072"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.509410" elapsed="0.000103"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.509654" elapsed="0.000079"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.509887" elapsed="0.000081"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.509235" elapsed="0.000822"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.510264" elapsed="0.000088"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.510482" elapsed="0.000077"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.510701" elapsed="0.000083"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.510137" elapsed="0.000835"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.505016" elapsed="0.006072"/>
+</if>
+<var name="${INDICE}">5</var>
+<var name="${NOME}">JAIME</var>
+<status status="PASS" start="2025-07-16T22:28:42.504904" elapsed="0.006255"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.511764" elapsed="0.000062"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.511915" elapsed="0.000043"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.512034" elapsed="0.000039"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.511586" elapsed="0.000532"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.512315" elapsed="0.000046"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.512437" elapsed="0.000045"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.512552" elapsed="0.000058"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.512162" elapsed="0.000497"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.513936" elapsed="0.000604"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.514824" elapsed="0.000514"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.515951" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 6 e me chamo JAIR</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.515575" elapsed="0.000574"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.513517" elapsed="0.002703"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.511570" elapsed="0.004702"/>
+</if>
+<var name="${INDICE}">6</var>
+<var name="${NOME}">JAIR</var>
+<status status="PASS" start="2025-07-16T22:28:42.511477" elapsed="0.004815"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.516697" elapsed="0.000047"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.516819" elapsed="0.000042"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.516927" elapsed="0.000044"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.516544" elapsed="0.000471"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.517189" elapsed="0.000041"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.517298" elapsed="0.000039"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.517401" elapsed="0.000038"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.517064" elapsed="0.000414"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.517592" elapsed="0.000403"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.518171" elapsed="0.000288"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.518797" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 7 e me chamo JAIRO</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.518639" elapsed="0.000264"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.517524" elapsed="0.001437"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.516530" elapsed="0.002481"/>
+</if>
+<var name="${INDICE}">7</var>
+<var name="${NOME}">JAIRO</var>
+<status status="PASS" start="2025-07-16T22:28:42.516461" elapsed="0.002575"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.519644" elapsed="0.000054"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.519796" elapsed="0.000046"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.520073" elapsed="0.000054"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.519424" elapsed="0.000752"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.520397" elapsed="0.000049"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.520529" elapsed="0.000046"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.520662" elapsed="0.000051"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.520228" elapsed="0.000536"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.520917" elapsed="0.000465"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.521539" elapsed="0.000382"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.522560" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 8 e me chamo JARDE</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.522276" elapsed="0.000496"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.520821" elapsed="0.002023"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.519406" elapsed="0.003491"/>
+</if>
+<var name="${INDICE}">8</var>
+<var name="${NOME}">JARDE</var>
+<status status="PASS" start="2025-07-16T22:28:42.519301" elapsed="0.003618"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.523337" elapsed="0.000052"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.523468" elapsed="0.000042"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.523579" elapsed="0.000038"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.523182" elapsed="0.000473"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.523814" elapsed="0.000038"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.523914" elapsed="0.000036"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.524008" elapsed="0.000035"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.523699" elapsed="0.000382"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.524184" elapsed="0.000368"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.524685" elapsed="0.000352"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.525554" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 9 e me chamo JOSE</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.525327" elapsed="0.000323"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.524122" elapsed="0.001589"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.523168" elapsed="0.002598"/>
+</if>
+<var name="${INDICE}">9</var>
+<var name="${NOME}">JOSE</var>
+<status status="PASS" start="2025-07-16T22:28:42.523098" elapsed="0.002687"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.526193" elapsed="0.000050"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.526321" elapsed="0.000041"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.526429" elapsed="0.000037"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.526031" elapsed="0.000489"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.526680" elapsed="0.000368"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.527209" elapsed="0.000430"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.528327" level="INFO">Eu sou o número 10 e me chamo HONORATO</msg>
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.528079" elapsed="0.000363"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.526563" elapsed="0.001963"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.528707" elapsed="0.000052"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.528849" elapsed="0.000063"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.529006" elapsed="0.000054"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.528590" elapsed="0.000529"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.526017" elapsed="0.003283"/>
+</if>
+<var name="${INDICE}">10</var>
+<var name="${NOME}">HONORATO</var>
+<status status="PASS" start="2025-07-16T22:28:42.525949" elapsed="0.003406"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.530605" elapsed="0.000065"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.530864" elapsed="0.000049"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.530993" elapsed="0.000044"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.530241" elapsed="0.000844"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.531307" elapsed="0.000051"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.531437" elapsed="0.000040"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.531551" elapsed="0.000043"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.531134" elapsed="0.000505"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.531776" elapsed="0.000375"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.532353" elapsed="0.000314"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.533140" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 11 e me chamo MAZE</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.532958" elapsed="0.000303"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.531693" elapsed="0.001629"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.530205" elapsed="0.003170"/>
+</if>
+<var name="${INDICE}">11</var>
+<var name="${NOME}">MAZE</var>
+<status status="PASS" start="2025-07-16T22:28:42.529987" elapsed="0.003409"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.533795" elapsed="0.000045"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.533914" elapsed="0.000050"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.534035" elapsed="0.000039"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.533657" elapsed="0.000455"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.534267" elapsed="0.000039"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.534377" elapsed="0.000036"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.534475" elapsed="0.000036"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.534154" elapsed="0.000395"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.534658" elapsed="0.000335"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.535143" elapsed="0.000276"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.535804" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 12 e me chamo GILDA</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.535645" elapsed="0.000370"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.534588" elapsed="0.001617"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.533641" elapsed="0.002679"/>
+</if>
+<var name="${INDICE}">12</var>
+<var name="${NOME}">GILDA</var>
+<status status="PASS" start="2025-07-16T22:28:42.533560" elapsed="0.002799"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${NOME}' == 'JAIME'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.536874" elapsed="0.000050"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.537008" elapsed="0.000045"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.537139" elapsed="0.000050"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.536697" elapsed="0.000540"/>
+</branch>
+<branch type="ELSE IF" condition="'${NOME}' == 'HONORATO'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.537432" elapsed="0.000042"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.537787" elapsed="0.000184"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-16T22:28:42.538578" elapsed="0.000139"/>
+</kw>
+<status status="NOT RUN" start="2025-07-16T22:28:42.537289" elapsed="0.001515"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.538985" elapsed="0.000540"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.539684" elapsed="0.000410"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.540417" level="INFO">Eu não sou o número 5 nem o 10, eu sou o número 13 e me chamo GIVALDO</msg>
+<arg>Eu não sou o número 5 nem o 10, eu sou o número ${INDICE} e me chamo ${NOME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.540241" elapsed="0.000353"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.538877" elapsed="0.001788"/>
+</branch>
+<status status="PASS" start="2025-07-16T22:28:42.536683" elapsed="0.004037"/>
+</if>
+<var name="${INDICE}">13</var>
+<var name="${NOME}">GIVALDO</var>
+<status status="PASS" start="2025-07-16T22:28:42.536601" elapsed="0.004141"/>
+</iter>
+<var>${INDICE}</var>
+<var>${NOME}</var>
+<value>@{NOMES}</value>
+<status status="PASS" start="2025-07-16T22:28:42.476844" elapsed="0.063967"/>
+</for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.540928" elapsed="0.000286"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>**** Finalizando a Brincadeira ****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.541346" elapsed="0.000241"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-16T22:28:42.541900" level="INFO">**** Finalizando a Brincadeira ****</msg>
+<arg>**** Finalizando a Brincadeira ****</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-16T22:28:42.541779" elapsed="0.000208"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.470429" elapsed="0.071645"/>
+</kw>
+<status status="PASS" start="2025-07-16T22:28:42.469526" elapsed="0.073096"/>
 </test>
-<doc>Criar variavel do tipo dicionario, contendo os meses do ano
-e sua respectiva quantidade de dias, apresentar resultado em um LOG</doc>
-<status status="PASS" start="2025-07-14T21:18:46.825670" elapsed="0.238102"/>
+<doc>criar uma variavel do tipo lista com mais ou até 10 itens
+percorrer essa variavel num loop FOR e usando um IF dentro
+do bloco FOR, imprimir no LOG 'Eu sou o numero 5! e 10!'
+e também 'Eu não sou o mnumero 5! nem 10!'</doc>
+<status status="PASS" start="2025-07-16T22:28:42.259814" elapsed="0.284012"/>
 </suite>
 <statistics>
 <total>
@@ -80,7 +940,7 @@ e sua respectiva quantidade de dias, apresentar resultado em um LOG</doc>
 <tag>
 </tag>
 <suite>
-<stat name="Tipos De Variaveis Dicionario" id="s1" pass="1" fail="0" skip="0">Tipos De Variaveis Dicionario</stat>
+<stat name="Eunaosou For If" id="s1" pass="1" fail="0" skip="0">Eunaosou For If</stat>
 </suite>
 </statistics>
 <errors>
